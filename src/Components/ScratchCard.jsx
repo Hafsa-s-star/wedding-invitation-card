@@ -134,8 +134,8 @@ const ScratchCard = () => {
   };
 
   const handleGoogleCalendar = () => {
-    const title = encodeURIComponent("Ayesha & Muzzamil's Wedding #Ayemil");
-    const details = encodeURIComponent("Join us in celebrating the wedding of Ayesha & Muzzamil! Hashtag: #Ayemil");
+    const title = encodeURIComponent("Sophia & Oliver's Wedding #Sophiver");
+    const details = encodeURIComponent("Join us in celebrating the wedding of Sophia & Oliver! Hashtag: #Sophiver");
     const location = encodeURIComponent("Royal Palm Floral Garden Hall, Main Boulevard");
     const startDate = "20261115T180000";
     const endDate = "20261115T230000";

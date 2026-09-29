@@ -90,7 +90,7 @@ const CountdownTimer = () => {
 
       <div className="mt-8 flex justify-center items-center gap-2 text-xs font-sans-clean text-[#7a6040]">
         <Heart className="w-3.5 h-3.5 text-[#d4af37] fill-[#d4af37]" />
-        <span>Every second brings us closer to our forever #Ayemil</span>
+        <span>Every second brings us closer to our forever #Sophiver</span>
         <Heart className="w-3.5 h-3.5 text-[#d4af37] fill-[#d4af37]" />
       </div>
     </section>

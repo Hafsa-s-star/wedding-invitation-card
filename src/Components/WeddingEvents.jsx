@@ -20,7 +20,7 @@ const WeddingEvents = () => {
       title: 'Sacred Nikkah Ceremony',
       time: '04:30 PM',
       date: 'Sunday, Nov 15, 2026',
-      desc: 'The solemnization of vows as Ayesha & Muzzamil unite in Holy Nikkah under divine blessings, surrounded by family love & prayers.',
+      desc: 'The solemnization of vows as Sophia & Oliver unite in Holy Matrimony under divine blessings, surrounded by family love & prayers.',
       image:
         ' https://i.pinimg.com/originals/77/eb/3d/77eb3d502b03a7c9ac52c35212bf3e51.jpg',
       badge: 'Spiritual Union',

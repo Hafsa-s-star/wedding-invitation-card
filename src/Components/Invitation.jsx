@@ -8,6 +8,7 @@ import VenueMap from './VenueMap';
 import RSVPForm from './RSVPForm';
 import Footer from './Footer';
 import AudioPlayer from './AudioPlayer';
+import FloatingPetals from './FloatingPetals';
 
 function Invitation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +29,13 @@ function Invitation() {
         {/* Floating Ambient Music Control */}
         <AudioPlayer autoStart={autoStartAudio} />
 
-        {/* Decorative Floating Golden Heart / Flower Petals Background */}
-        <div className="fixed inset-0 pointer-events-none z-0 opacity-20">
-          <div className="absolute top-10 left-[10%] w-72 h-72 rounded-full bg-[#d4af37] blur-3xl" />
-          <div className="absolute bottom-20 right-[10%] w-96 h-96 rounded-full bg-[#e6c86e] blur-3xl" />
+        {/* Canvas Floating Golden Petals Animation */}
+        {isOpen && <FloatingPetals />}
+
+        {/* Soft Background Radial Lighting */}
+        <div className="fixed inset-0 pointer-events-none z-0 opacity-25">
+          <div className="absolute top-10 left-[10%] w-80 h-80 rounded-full bg-[#d4af37] blur-3xl animate-pulse" style={{ animationDuration: '6s' }} />
+          <div className="absolute bottom-20 right-[10%] w-96 h-96 rounded-full bg-[#e6c86e] blur-3xl animate-pulse" style={{ animationDuration: '8s' }} />
         </div>
 
         {/* Card Main Wrapper */}

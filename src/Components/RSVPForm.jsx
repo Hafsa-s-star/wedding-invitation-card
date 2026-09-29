@@ -20,13 +20,19 @@ const RSVPForm = () => {
     {
       name: 'Usman & Family',
       attendance: 'attending',
-      wish: 'Wishing Ayesha and Muzzamil a lifetime of love, joy, and endless happiness! #Ayemil',
+      wish: 'Wishing Sophia and Oliver a lifetime of love, joy, and endless happiness! #Sophiver',
       time: 'Just now',
+    },
+    {
+      name: 'Dr. Bilal Malik',
+      attendance: 'declined',
+      wish: 'Regrettably cannot join in person due to travel, but sending my warmest blessings for Sophia & Oliver!',
+      time: '45 mins ago',
     },
     {
       name: 'Fatima Noor',
       attendance: 'attending',
-      wish: 'May Allah bless your marriage with peace, harmony, and togetherness forever!',
+      wish: 'May your marriage be blessed with peace, harmony, and togetherness forever!',
       time: '1 hour ago',
     },
     {
@@ -106,10 +112,10 @@ const RSVPForm = () => {
           <Heart className="w-4 h-4 text-[#d4af37] fill-[#d4af37]" />
         </div>
         <h2 className="font-playfair text-3xl sm:text-4xl text-[#2c221e] font-bold">
-          Send Your Blessings to #Ayemil
+          Send Your Blessings to #Sophiver
         </h2>
         <p className="text-xs sm:text-sm text-gray-600 font-sans-clean mt-2">
-          Please confirm your attendance and leave a warm message for Ayesha & Muzzamil
+          Please confirm your attendance and leave a warm message for Sophia & Oliver
         </p>
       </div>
 
@@ -125,7 +131,7 @@ const RSVPForm = () => {
                 Thank You, {wishesList[0]?.name}!
               </h3>
               <p className="font-sans-clean text-xs text-gray-600 max-w-xs mx-auto">
-                Your response and heartfelt wish have been recorded for Ayesha & Muzzamil.
+                Your response and heartfelt wish have been recorded for Sophia & Oliver.
               </p>
             </div>
           ) : (
@@ -207,7 +213,7 @@ const RSVPForm = () => {
                   name="wish"
                   required
                   rows={3}
-                  placeholder="Write a sweet congratulatory message for Ayesha & Muzzamil..."
+                  placeholder="Write a sweet congratulatory message for Sophia & Oliver..."
                   value={formData.wish}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl bg-white/90 border border-[#d4af37]/40 text-stone-800 text-sm font-sans-clean focus:outline-none focus:ring-2 focus:ring-[#d4af37] transition-all"
@@ -245,9 +251,13 @@ const RSVPForm = () => {
                     <span className="font-playfair font-bold text-sm text-[#2c221e]">
                       {item.name}
                     </span>
-                    {item.attendance === 'attending' && (
+                    {item.attendance === 'attending' ? (
                       <span className="bg-emerald-100 text-emerald-800 text-[10px] px-2 py-0.5 rounded-full font-bold">
                         Attending
+                      </span>
+                    ) : (
+                      <span className="bg-[#800020]/15 text-[#800020] border border-[#800020]/30 text-[10px] px-2 py-0.5 rounded-full font-bold">
+                        Not Attending
                       </span>
                     )}
                   </div>
@@ -257,7 +267,7 @@ const RSVPForm = () => {
                   "{item.wish}"
                 </p>
               </div>
-            ))}
+            ))}]
           </div>
         </div>
       </div>

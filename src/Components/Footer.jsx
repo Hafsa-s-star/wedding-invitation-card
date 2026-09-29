@@ -13,11 +13,11 @@ const Footer = () => {
         </div>
 
         <h3 className="font-script text-4xl sm:text-5xl text-[#e6c86e]">
-          Ayesha & Muzzamil
+          Sophia & Oliver
         </h3>
 
         <p className="font-serif-title text-xs uppercase tracking-[0.3em] text-[#d4af37] font-semibold">
-          #Ayemil • November 15, 2026
+          #Sophiver • November 15, 2026
         </p>
 
         <p className="font-playfair italic text-xs sm:text-sm text-stone-300 max-w-md mx-auto leading-relaxed">
@@ -25,7 +25,7 @@ const Footer = () => {
         </p>
 
         <div className="pt-6 border-t border-white/10 text-[11px] font-sans-clean text-stone-400">
-          With Love & Blessings from the Families of Ayesha & Muzzamil
+          With Love & Blessings from the Families of Sophia & Oliver
         </div>
       </div>
     </footer>

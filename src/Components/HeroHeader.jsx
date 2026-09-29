@@ -60,7 +60,7 @@ const HeroHeader = () => {
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full border-2 border-[#d4af37] flex items-center justify-center p-2 relative bg-stone-950/80 shadow-2xl">
             <div className="w-full h-full rounded-full border border-dashed border-[#d4af37]/70 flex items-center justify-center">
               <span className="font-script text-3xl sm:text-4xl text-[#e6c86e] font-bold">
-                A & M
+                S & O
               </span>
             </div>
             <Heart className="w-4 h-4 text-[#d4af37] fill-[#d4af37] absolute -bottom-2 bg-stone-900 px-0.5" />
@@ -74,7 +74,7 @@ const HeroHeader = () => {
 
         <div className="hero-anim-1 my-4">
           <h1 className="font-script text-6xl sm:text-8xl md:text-9xl text-white leading-tight drop-shadow-2xl">
-            Ayesha <span className="text-[#e6c86e] font-playfair font-normal text-4xl sm:text-6xl md:text-7xl align-middle px-2">&</span> Muzzamil
+            Sophia <span className="text-[#e6c86e] font-playfair font-normal text-4xl sm:text-6xl md:text-7xl align-middle px-2">&</span> Oliver
           </h1>
         </div>
 
@@ -82,7 +82,7 @@ const HeroHeader = () => {
         <div className="hero-hashtag inline-flex items-center gap-2 bg-gradient-to-r from-[#d4af37]/20 via-[#d4af37]/35 to-[#d4af37]/20 px-6 py-2 rounded-full border border-[#d4af37]/60 shadow-lg my-4">
           <Sparkles className="w-4 h-4 text-[#e6c86e]" />
           <span className="font-sans-clean font-bold text-base sm:text-lg text-[#e6c86e] tracking-widest uppercase">
-            #Ayemil
+            #Sophiver
           </span>
           <Sparkles className="w-4 h-4 text-[#e6c86e]" />
         </div>
