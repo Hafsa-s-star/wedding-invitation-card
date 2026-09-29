@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-serif-title {
+    font-family: 'Cinzel', serif;
+  }
+  .font-script {
+    font-family: 'Great Vibes', cursive;
+  }
+  .font-accent {
+    font-family: 'Alex Brush', cursive;
+  }
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-sans-clean {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom Scrollbar & Animations */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f3ed;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9b7a37;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.7);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+@keyframes floatPetal {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.petal {
+  position: absolute;
+  top: -20px;
+  pointer-events: none;
+  animation: floatPetal 10s linear infinite;
+}
+
+/* Luxury Card Shadow & Glassmorphism */
+.glass-gold {
+  background: rgba(255, 253, 249, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 15px 35px rgba(44, 34, 30, 0.08), 0 5px 15px rgba(212, 175, 55, 0.05);
+}
+
+.glass-dark {
+  background: rgba(26, 20, 18, 0.75);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #d4af37 0%, #e6c86e 50%, #b8860b 100%);
+}
